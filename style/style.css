@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    color: lightskyblue;
+}
+
+nav {
+    background-color: #00a2ca;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    background-color: #00cbeb;
+    color: #ffffff;
+}
+.tentang h1{
+    text-align: center;
+}
+.tentang img{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;    
+    position: relative;
+    border-radius: 100%;
+}
+.tentang{
+    text-align: center;
+}
+.tentang section{
+    text-align: center;
+}
+.tentang section table td{
+    text-align: left;
+    padding: 10px;
+}
+.kontak h1{
+    text-align: center;
+}
+.kontak img{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;    
+    position: relative;
+    border-radius: 100%;
+}
+.kontak{
+    text-align: center;
+}
+.kontak section{
+    text-align: center;
+}
+.kontak section table td{
+    text-align: left;
+    padding: 10px;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+
+#content {
+    width: 75%;
+    float: left;
+}
+
+#content p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+aside {
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile header {
+    text-align: center;
+}
+header{
+    display: inline;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    -webkit-box-shadow: 2px 2px 10px 3px rgba(173, 164, 173, 1);
+    -moz-box-shadow: 2px 2px 10px 3px rgba(173, 164, 173, 1);
+    box-shadow: 2px 2px 10px 3px rgba(173, 164, 173, 1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: lightskyblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    border: 2px solid #333333;
+}
+.content-colomn{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    flex-basis: 25%;
+    background-color: #00a2ca;
+    text-align: center;
+    color: #ffffff;
+    border: 2px solid #333333;
+    padding: 20px;
+    
+}
+.double{
+    flex-basis: 50%;
+}
+
+/* responsif */
+@media screen and (max-width : 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
